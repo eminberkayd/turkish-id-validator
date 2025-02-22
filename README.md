@@ -21,6 +21,14 @@ isValidTurkishCitizen({
     lastname: 'Ceylan', 
     identity: '12345678901', 
     birthyear: 1959
-}).then(console.log); // true or false. If request to Turkish Government API fails, it will throw an error.
+}).then((isValidCitizen) => {
+    if (isValidCitizen) {
+        console.log("This person is a valid Turkish citizen");
+    } else {
+        console.log("This person is not a valid Turkish citizen");
+    }
+}).catch((error) => {
+    console.error('Turkish API Request failed! ' + error?.message);
+});
 
 ```
