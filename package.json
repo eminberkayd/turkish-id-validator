@@ -1,0 +1,26 @@
+{
+  "name": "turkish-id-validator",
+  "version": "1.0.0",
+  "description": "A simple npm package to validate Turkish Republic Identity Number (TC Kimlik No) and check if a person is a valid TR citizen",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eminberkaydaglar/turkish-id-validator.git"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "eminberkaydaglar@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "soap": "^1.1.8"
+  }
+}
